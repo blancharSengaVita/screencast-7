@@ -12,8 +12,10 @@
 		<?php require base_path('views/partials/nav.view.php');  ?>
 		<?php require base_path('views/partials/header.view.php')  ?>
         <main>
+
             <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                 <!-- Replace with your content -->
+
                 <div class="px-4 py-6 sm:px-0">
                     <div class="h-96 rounded-lg border-4 border-dashed border-gray-200">
                         <h1>Ma note</h1>
@@ -23,6 +25,11 @@
                         <a href="/notes">Retourner à l'index des notes</a>
                     </div>
                 </div>
+				<form action="/note" method="POST">
+					<button> supprimer la note </button>
+					<input type="hidden" name="_method" value="delete">
+					<input type="hidden" name="id" value="<?= $note['id'] ?>">
+				</form>
                 <!-- /End replace -->
             </div>
         </main>

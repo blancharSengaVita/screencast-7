@@ -1,5 +1,4 @@
 <?php
-
 use Core\Database;
 use Core\Response;
 use Core\Validator;

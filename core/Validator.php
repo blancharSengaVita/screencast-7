@@ -1,5 +1,6 @@
 <?php
 
+namespace Core;
 class Validator
 {
 	public static function correctRequest(array $array, string $key): bool
@@ -11,7 +12,6 @@ class Validator
 	{
 		return !(strlen(trim($string)) > $max || strlen(trim($string)) < $min);
 	}
-
 
 
 }
